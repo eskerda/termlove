@@ -1,0 +1,262 @@
+/*  
+Theme Name: termlove
+Theme URI: http://github.com/eskerda/termlove
+Version: 1.0
+Author: eskerda
+Author URI: http://eskerda.com
+Description: For the ones that spend too much time on the term
+*/
+
+@import url("css/normalize.css");
+@import url("css/main.css");
+
+html {
+    color: #ECECEC;
+    background-color: #000;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/** General shared styling of elements **/
+
+a {
+    text-decoration: none;
+    color: #00FF00;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a.custom {
+    text-decoration: none;
+    color: inherit;
+}
+
+a.custom:hover {
+    text-decoration: none;
+}
+
+header {
+    background-color: #111;
+    border-color: #222;
+    border-style: solid;
+    color: #ACACAC;
+    font-weight: 300;
+}
+
+main {    
+    height: 100%;
+    padding: 20px;
+}
+
+pre {
+    font-family: monospace;
+    background-color: #111;
+    border-color: #00FF00;
+    border-style: solid;
+    border-width: 0 0 0 4px;
+    padding: 10px;
+}
+
+nav ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav ul li {
+    margin: 0px;
+    padding: 0px;
+}
+
+/** Main menu styling **/
+
+header#main {
+    padding-top: 20px;
+}
+
+header#main h2, header#main p {
+    text-align: center;
+}
+
+header#main nav ul li {
+    border-color: transparent;
+    border-style: solid;
+    font-size: 1.5em;
+}
+
+header#main nav ul li:hover{
+    border-color: #00FF00;
+}
+
+header#main nav ul li a {
+    padding: 10px;
+    color: inherit;
+}
+
+header#main nav ul li a:hover{
+    text-decoration: none;
+    color: #00FF00;
+}
+
+/** Article Styling **/
+
+article {
+    font-weight: 300 !important;
+}
+
+article header { 
+    padding: 5px 20px 20px 20px;
+    border-width: 0 0 0 4px;
+    position: relative;
+    border-color: #00FF00;
+}
+
+article header h1{
+    font-weight: 300;
+}
+
+article header h1 a{
+    color: #ABABAB;
+}
+
+article header .entry-meta {
+    text-align: right;
+}
+
+article p{
+    line-height: 1.8em;
+}
+
+/** Blog pagination **/
+
+nav#pagination {
+
+}
+
+nav#pagination ul {
+    
+}
+
+nav#pagination ul li {
+    display: inline-block;
+}
+
+nav#pagination ul li.future {
+    float: left;
+}
+
+nav#pagination ul li.future a:before{
+    content: '\00AB\0020';
+}
+
+nav#pagination ul li.past {
+    float: right;
+}
+
+nav#pagination ul li.past a:after{
+    content: '\0020\00BB';
+}
+
+/* Footer */
+footer.main {
+    padding-top: 20px;
+}
+
+/* Media Queries */
+
+/* MOBILE FIRST */
+
+html {
+    height: 100%;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    border-width: 0 0 4px 0;
+}
+
+div.header-container {
+
+}
+
+header#main {
+    border-width: 0 0 4px 0;
+}
+
+header#main nav ul {
+    margin-bottom: -4px;
+    text-align: center;
+}
+
+header#main nav ul li {
+    border-width: 0 0 4px 0;
+    display: inline-block;
+}
+
+header#main nav ul li a {
+    display: block;
+}
+
+article .content{
+    margin: 0 auto;
+    width: 95%;
+}
+
+/* WIDE */
+@media only screen and (min-width: 768px) {
+    
+    div.header-container {
+        position: fixed;
+        width: 25.46%;
+        height: 100%;
+        margin-left: 74.54%;
+    }
+
+    div.main-container {
+        height: 100%;
+        width: 74.54%;
+        margin: 0 0;
+    }
+
+    header#main {
+        height: 100%;
+        border-width: 0 0 0 4px;
+    }
+
+    header#main nav ul {
+        margin-left: -4px;
+    }
+
+    header#main nav ul li {
+        text-align: left;
+        display: block;
+        border-width: 0 0 0 4px;
+    }
+
+    header#main nav ul li a {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    div.header-container {
+        position: fixed;
+        width: 280px;
+        right: 0px;
+    }
+
+    div.main-container {
+        width: 860px;
+        margin: 0 auto;
+        padding-right: 280px;
+    }
+}

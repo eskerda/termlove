@@ -68,6 +68,29 @@ nav ul li {
     padding: 0px;
 }
 
+blockquote {
+    position: relative;
+    font-style: italic;
+    margin-left: 45px;
+}
+
+blockquote cite {
+    font-style: normal;
+}
+
+blockquote:before{
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    height: 0px;
+    width: 0px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 8em;
+    content: '\201C';
+    opacity: 0.4;
+}
+
 /** Main menu styling **/
 
 header#main {

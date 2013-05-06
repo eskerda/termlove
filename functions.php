@@ -17,7 +17,21 @@ function register_main_menu() {
   register_nav_menu('header-menu',__( 'Header Menu' ));
 }
 
+function custom_settings_api_init() {
+    add_settings_field('google_analytics_id',
+        'Google Analytics Tracking ID',
+        'google_analytics_setting_callback_function',
+        'general');
+    register_setting('general','google_analytics_id');
+}
+
+function google_analytics_setting_callback_function() {
+    echo '<input name="google_analytics_id" id="st_google_analytics_id" type="text" value="'.get_option('google_analytics_id').'" placeholder="UA-XXXXX-X" />';
+}
+
 add_action( 'init', 'register_main_menu' );
+add_action( 'admin_init', 'custom_settings_api_init');
+
 add_theme_support( 'post-thumbnails' );
 
 ?>

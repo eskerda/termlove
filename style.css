@@ -105,10 +105,7 @@ header#main nav ul li {
     border-color: transparent;
     border-style: solid;
     font-size: 1.5em;
-}
-
-header#main nav ul li:hover{
-    border-color: #00FF00;
+    margin-top: 5px;
 }
 
 header#main nav ul li a {
@@ -116,7 +113,11 @@ header#main nav ul li a {
     color: inherit;
 }
 
-header#main nav ul li a:hover{
+header#main nav ul li:hover, header#main nav ul li.current-menu-item{
+    border-color: #00FF00;
+}
+
+header#main nav ul li:hover a, header#main nav ul li.current-menu-item a{
     text-decoration: none;
     color: #00FF00;
 }

@@ -240,6 +240,45 @@ article .content{
     width: 95%;
 }
 
+/* MEDIUM (tablets) */
+@media only screen and (min-width: 480px) {
+
+    div.header-container {
+
+    }
+
+    div.main-container {
+
+    }
+
+    header#main {
+        position: relative;
+    }
+
+    header#main div.description {
+        display: block;
+        margin-right: 280px;
+    }
+
+    header#main nav {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+    }
+
+    header#main nav ul {
+
+    }
+
+    header#main nav ul li {
+
+    }
+
+    header#main nav ul li a {
+
+    }
+}
+
 /* WIDE */
 @media only screen and (min-width: 768px) {
     
@@ -259,6 +298,15 @@ article .content{
     header#main {
         height: 100%;
         border-width: 0 0 0 4px;
+    }
+
+    header#main div.description {
+        display: block;
+        margin: 0 auto;
+    }
+
+    header#main nav {
+        position: relative;
     }
 
     header#main nav ul {

@@ -151,6 +151,16 @@ article p{
     line-height: 1.8em;
 }
 
+article div.content div.thumbnail {
+    display: inline-block;
+    float: left;
+    margin: 0 20px 5px 0;
+}
+
+article div.content div.thumbnail img {
+
+}
+
 /** Blog pagination **/
 
 nav#pagination {

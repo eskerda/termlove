@@ -91,6 +91,26 @@ blockquote:before{
     opacity: 0.4;
 }
 
+.alignleft {
+    display: inline-block;
+    float: left;
+    margin-right: 1em;
+    margin-bottom: 10px;
+}
+
+.alignright {
+    display: inline-block;
+    float: right;
+    margin-left: 1em;
+    margin-bottom: 10px;
+}
+
+.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /** Main menu styling **/
 
 header#main {

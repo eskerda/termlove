@@ -160,6 +160,10 @@ article div.content div.thumbnail img {
 
 }
 
+article ul {
+    list-style: disc inside;
+}
+
 /** Blog pagination **/
 
 nav#pagination {

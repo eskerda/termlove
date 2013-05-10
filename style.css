@@ -153,7 +153,7 @@ article p{
 article div.content div.thumbnail {
     display: inline-block;
     float: left;
-    margin: 0 20px 5px 0;
+    margin: 0 1em;
 }
 
 article div.content div.thumbnail img {

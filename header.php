@@ -24,9 +24,10 @@
                 echo " | $site_description";
             ?>
         </title>
-        <meta name="description" content="">
+        <meta name="description" content="<?php bloginfo( 'description' ); ?>">
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>">
+        <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
         <script src="<?php echo bloginfo('template_directory');?>/js/vendor/modernizr-2.6.2.min.js"></script>
         <script type="text/javascript">
             var _gaq = _gaq || [];

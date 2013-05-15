@@ -39,6 +39,7 @@
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
             })();
         </script>
+        <?php wp_head(); ?>
     </head>
     <body>
         <!--[if lt IE 7]>

@@ -9,6 +9,7 @@ Description: For the ones that spend too much time on the term
 
 @import url("css/normalize.css");
 @import url("css/main.css");
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300);
 
 html {
     color: #ECECEC;

@@ -112,6 +112,12 @@ blockquote:before{
     margin-right: auto;
 }
 
+div.wp-caption p.wp-caption-text {
+    text-align: right;
+    font-size: 0.8em;
+    font-weight: 400;
+}
+
 /** Main menu styling **/
 
 header#main {

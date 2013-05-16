@@ -52,12 +52,18 @@ main {
 
 pre {
     font-family: monospace;
+    font-size: 1em;
+    color: #AEAEAE;
+
+    white-space: pre;
+    word-wrap: normal;
+    overflow-x: auto;
+    padding: 1em 1em;
+
     background-color: #111;
     border-color: #00FF00;
     border-style: solid;
     border-width: 0 0 0 4px;
-    padding: 1em 1em;
-    color: #AEAEAE;
 }
 
 nav ul {

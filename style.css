@@ -187,7 +187,7 @@ article p{
 article div.content div.thumbnail {
     display: inline-block;
     float: right;
-    margin: 1em 0;
+    margin: 1em 0 0 1em;
 }
 
 article div.content div.thumbnail img {

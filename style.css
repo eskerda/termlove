@@ -12,7 +12,7 @@ Description: For the ones that spend too much time on the term
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300);
 
 html {
-    color: #ECECEC;
+    color: #FFF;
     background-color: #000;
     font-family: 'Open Sans', sans-serif;
 }
@@ -41,7 +41,7 @@ header {
     background-color: #111;
     border-color: #222;
     border-style: solid;
-    color: #ACACAC;
+    color: #CCC;
     font-weight: 300;
 }
 

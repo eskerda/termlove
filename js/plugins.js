@@ -22,3 +22,8 @@
 }());
 
 // Place any jQuery/helper plugins in here.
+
+// Pretty Print any source code blocks
+(function() {
+    addEventListener('load', function (event) { prettyPrint() }, false);
+}());

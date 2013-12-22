@@ -28,7 +28,6 @@
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>">
         <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-        <script src="<?php echo bloginfo('template_directory');?>/js/vendor/modernizr-2.6.2.min.js"></script>
         <script type="text/javascript">
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', '<?php echo get_option('google_analytics_id'); ?>']);

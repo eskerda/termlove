@@ -198,10 +198,6 @@ article ul {
     list-style: disc inside;
 }
 
-article div.content img.size-full {
-    max-width: 100%;
-}
-
 /** Blog pagination **/
 
 nav#pagination {

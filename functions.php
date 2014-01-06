@@ -23,10 +23,20 @@ function custom_settings_api_init() {
         'google_analytics_setting_callback_function',
         'general');
     register_setting('general','google_analytics_id');
+
+    add_settings_field('gravatar_blog_email',
+        'An email to display a gravatar image',
+        'gravatar_blog_email_callback_function',
+        'general');
+    register_setting('general','gravatar_blog_email');
 }
 
 function google_analytics_setting_callback_function() {
     echo '<input name="google_analytics_id" id="st_google_analytics_id" type="text" value="'.get_option('google_analytics_id').'" placeholder="UA-XXXXX-X" />';
+}
+
+function gravatar_blog_email_callback_function() {
+    echo '<input name="gravatar_blog_email" id="st_gravatar_blog_email type="text" value="'.get_option('gravatar_blog_email').' " placeholder="foo@example.com" />';
 }
 
 add_action( 'init', 'register_main_menu' );
@@ -35,3 +45,4 @@ add_action( 'admin_init', 'custom_settings_api_init');
 add_theme_support( 'post-thumbnails' );
 
 ?>
+

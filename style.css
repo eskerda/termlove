@@ -155,6 +155,7 @@ header#main nav ul li:hover a, header#main nav ul li.current-menu-item a{
     color: #00FF00;
 }
 
+
 /** Article Styling **/
 
 article {
@@ -272,6 +273,15 @@ header#main nav ul li a {
     display: block;
 }
 
+header#main h2, header#main p {
+    margin: 0px;
+    padding: 0px;
+}
+
+header#main div.description img {
+    display: none;
+}
+
 article .content{
     margin: 0 auto;
     width: 95%;
@@ -358,6 +368,20 @@ article .content{
 
     header#main nav ul li a {
         display: block;
+    }
+
+    header#main div.description {
+        text-align: center;
+    }
+
+    header#main h2, header#main p {
+        margin: 5px;
+    }
+
+    header#main div.description img {
+        display: inline-block;
+        border-radius: 50%;
+        border: solid 4px #222;
     }
 }
 

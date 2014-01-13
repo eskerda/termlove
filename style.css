@@ -189,6 +189,7 @@ article header .entry-meta span.comments-link a{
     text-transform: uppercase;
     font-size: 0.9em;
     color: #969696;
+    font-weight: 400;
 }
 
 article header .entry-meta span.comments-link a:hover {

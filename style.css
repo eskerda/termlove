@@ -354,18 +354,20 @@ section#comments p.nocomments {
 
 /** Article Comment Form **/
 
+section#comments div#respond,
+section#comments div#respond *,
+section#comments div#respond *:before,
+section#comments div#respond *:after {
+    box-sizing: border-box;
+}
+
 section#comments div#respond {
     width: 100%;
 }
 
 section#comments ol.comment-list div#respond {
-    width: 100%;
-}
-
-section#comments div#respond *,
-section#comments div#respond *:before,
-section#comments div#respond *:after {
-    box-sizing: border-box;
+    border-left: dashed 1px #111;
+    padding-left: 20px;
 }
 
 section#comments div#respond h3#reply-title {

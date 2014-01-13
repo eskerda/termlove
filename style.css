@@ -354,7 +354,12 @@ section#comments li.comment article.comment-body div.reply {
 }
 
 section#comments li.comment article.comment-body div.reply a{
+    color: #969696;
+}
 
+section#comments li.comment article.comment-body div.reply a:hover {
+    color: #0F0;
+    text-decoration: none;
 }
 
 section#comments li.comment article.comment-body div.reply a:before {
@@ -392,7 +397,12 @@ section#comments div#respond h3#reply-title {
 }
 
 section#comments div#respond h3#reply-title a#cancel-comment-reply-link {
+    color: #969696;
+}
 
+section#comments div#respond h3#reply-title a#cancel-comment-reply-link:hover {
+    text-decoration: none;
+    color: #0F0;
 }
 
 section#comments div#respond form p label {

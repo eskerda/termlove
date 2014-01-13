@@ -229,6 +229,68 @@ nav#pagination ul li.past a:after{
     content: '\0020\00BB';
 }
 
+/** Article Comments **/
+
+section#comments {
+    margin: 0 auto;
+    width: 80%;
+}
+
+section#comments div#respond h3#reply-title {
+    font-weight: 900;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+section#comments div#respond form p label {
+    font-weight: 300;
+}
+
+section#comments div#respond form p input[type=text],
+section#comments div#respond form p textarea {
+    width: 100%;
+    padding: 8px 10px 7px;
+    color: #FFF;
+    background-color: #111;
+    border-color: #222;
+    border-width: 0 0 0 4px;
+    border-style: solid;
+}
+
+section#comments div#respond form p input[type=text]:focus,
+section#comments div#respond form p textarea:focus {
+    outline: 0;
+    border-color: #00FF00;
+}
+
+section#comments div#respond form p.comment-notes,
+section#comments div#respond form p.form-allowed-tags {
+    font-size: 0.9em;
+    color: #A6A6A6;
+}
+
+section#comments div#respond form p.form-submit input {
+    text-transform: uppercase;
+    font-weight: 300;
+    padding: 10px 30px 11px;
+    font-size: 0.9em;
+
+    color: #FFF;
+    background-color: #111;
+    border-width: 0 0 0 4px;
+    border-color: #222;
+    border-style: solid;
+    outline: 0;
+}
+
+section#comments div#respond form p.form-submit input:hover {
+    background-color: #222;
+}
+
+section#comments div#respond form p.form-submit input:active {
+    border-color: #00FF00;
+}
+
 /* Footer */
 footer.main {
     padding-top: 20px;

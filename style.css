@@ -178,7 +178,22 @@ article header h1 a{
 }
 
 article header .entry-meta {
-    text-align: right;
+
+}
+
+article header .entry-meta span.comments-link {
+    float: right;
+}
+
+article header .entry-meta span.comments-link a{
+    text-transform: uppercase;
+    font-size: 0.9em;
+    color: #969696;
+}
+
+article header .entry-meta span.comments-link a:hover {
+    color: #0F0;
+    text-decoration: none;
 }
 
 article p{

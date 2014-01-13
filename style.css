@@ -378,10 +378,6 @@ section#comments div#respond h3#reply-title a#cancel-comment-reply-link {
 
 }
 
-section#comments div#respond h3#reply-title a#cancel-comment-reply-link:before {
-    content: "\2718";
-}
-
 section#comments div#respond form p label {
     font-weight: 300;
 }

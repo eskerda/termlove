@@ -435,7 +435,8 @@ section#comments div#respond form p.form-allowed-tags {
 
 section#comments div#respond form p.form-submit input {
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 400;
+    font-family: 'Open Sans';
     padding: 10px 30px 11px;
     font-size: 0.9em;
 
@@ -453,6 +454,7 @@ section#comments div#respond form p.form-submit input:focus {
 }
 
 section#comments div#respond form p.form-submit input:active {
+    color: #0F0;
     border-color: #00FF00;
 }
 

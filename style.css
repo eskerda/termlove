@@ -215,7 +215,12 @@ article ul {
     list-style: disc inside;
 }
 
-article div.content h2 {
+article div.content h1,
+article div.content h2,
+article div.content h3,
+article div.content h4,
+article div.content h5,
+article div.content h6 {
     font-weight: 400;
 }
 

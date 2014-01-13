@@ -23,6 +23,9 @@
                 <?php endif; ?>
             </ul>
         </nav>
+        <?php if(is_single()): ?>
+            <?php comments_template('', true); ?>
+        <?php endif; ?>
     </main>
 </div>
 <?php get_footer(); ?>

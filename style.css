@@ -215,6 +215,10 @@ article ul {
     list-style: disc inside;
 }
 
+article div.content h2 {
+    font-weight: 400;
+}
+
 /** Blog pagination **/
 
 nav#pagination {

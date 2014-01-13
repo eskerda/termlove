@@ -398,6 +398,7 @@ section#comments div#respond h3#reply-title {
 
 section#comments div#respond h3#reply-title a#cancel-comment-reply-link {
     color: #969696;
+    margin-left: 10px;
 }
 
 section#comments div#respond h3#reply-title a#cancel-comment-reply-link:hover {

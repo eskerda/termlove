@@ -1,6 +1,5 @@
 <?php
 
-if ( ! function_exists( 'termlove_posted_on' ) ) :
 /**
  * Prints HTML with meta information for the current post-date/time.
  *
@@ -11,10 +10,17 @@ function termlove_posted_on() {
         esc_html( get_the_date() )
     );
 }
-endif;
 
-function register_main_menu() {
-  register_nav_menu('header-menu',__( 'Header Menu' ));
+function termlove_setup() {
+    register_nav_menu('header-menu', __('Header Menu'));
+    add_theme_support('automatic-feed-links');
+    add_theme_support('html5',array('search-form','comment-form','comment-list'));
+    add_theme_support('post-thumbnails');
+}
+
+function termlove_scripts() {
+    if (is_singular() && comments_open() && get_option('thread_comments'))
+        wp_enqueue_script('comment-reply');
 }
 
 function custom_settings_api_init() {
@@ -39,10 +45,9 @@ function gravatar_blog_email_callback_function() {
     echo '<input name="gravatar_blog_email" id="st_gravatar_blog_email type="text" value="'.get_option('gravatar_blog_email').' " placeholder="foo@example.com" />';
 }
 
-add_action( 'init', 'register_main_menu' );
-add_action( 'admin_init', 'custom_settings_api_init');
-
-add_theme_support( 'post-thumbnails' );
+add_action('admin_init', 'custom_settings_api_init');
+add_action('after_setup_theme', 'termlove_setup');
+add_action('wp_enqueue_scripts', 'termlove_scripts');
 
 ?>
 

@@ -202,7 +202,8 @@ article ul {
 /** Blog pagination **/
 
 nav#pagination {
-
+    display: table;
+    width: 100%;
 }
 
 nav#pagination ul {
@@ -229,17 +230,156 @@ nav#pagination ul li.past a:after{
     content: '\0020\00BB';
 }
 
-/** Article Comments **/
+/** Article Comment List **/
 
 section#comments {
+    width: 95%;
     margin: 0 auto;
-    width: 80%;
+}
+
+section#comments h2 {
+    font-size: 1em;
+    display: block;
+    font-weight: 900;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+section#comments ol.comment-list,
+section#comments ol.children {
+    list-style-type: none;
+}
+
+section#comments ol.comment-list {
+    padding: 0;
+    margin: 0;
+}
+
+section#comments ol.children {
+    padding: 0 0 0 20px;
+    margin: 0;
+    border-left: dashed 1px #111;
+}
+
+section#comments li.comment {
+    margin: 2px 0 0 0;
+    padding: 8px 0 0 0;
+}
+
+section#comments li.comment ol li.comment {
+
+}
+
+li.comment article.comment-body {
+
+}
+
+li.comment article.comment-body footer {
+
+}
+
+li.comment article.comment-body footer div.vcard {
+    position: relative;
+}
+
+li.comment article.comment-body footer div.vcard img {
+    position: absolute;
+    top: 0px;
+    width: 34px;
+    height: 34px;
+
+    padding: 2px;
+    border: solid 1px #111;
+}
+
+li.comment article.comment-body footer div.vcard b {
+    padding-left: 48px;
+    font-size: 0.9em;
+    vertical-align: top;
+}
+
+li.comment article.comment-body footer div.vcard b a {
+    color: #FFF;
+    vertical-align: top;
+}
+
+li.comment article.comment-body footer div.vcard span.says {
+    display:none;
+}
+
+li.comment article.comment-body footer div.comment-metadata {
+    padding-left: 48px;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+li.comment article.comment-body footer div.comment-metadata a {
+    color: #969696;
+}
+
+li.comment article.comment-body footer div.comment-metadata span a {
+    color: #0F0;
+}
+
+li.comment article.comment-body div.comment-content {
+
+}
+
+li.comment article.comment-body div.comment-content p{
+    margin: 4px 0 0 0;
+    font-size: 0.95em;
+    font-weight: 300;
+    padding: 0 4px 0 4px;
+}
+
+section#comments li.comment article.comment-body div.reply {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+section#comments li.comment article.comment-body div.reply a{
+
+}
+
+section#comments li.comment article.comment-body div.reply a:before {
+    content: "\21B3";
+}
+
+section#comments p.nocomments {
+    text-transform: uppercase;
+    font-size: 0.9em;
+    color: #969696;
+}
+
+/** Article Comment Form **/
+
+section#comments div#respond {
+    width: 100%;
+}
+
+section#comments ol.comment-list div#respond {
+    width: 100%;
+}
+
+section#comments div#respond *,
+section#comments div#respond *:before,
+section#comments div#respond *:after {
+    box-sizing: border-box;
 }
 
 section#comments div#respond h3#reply-title {
     font-weight: 900;
     font-size: 1em;
     text-transform: uppercase;
+}
+
+section#comments div#respond h3#reply-title a#cancel-comment-reply-link {
+
+}
+
+section#comments div#respond h3#reply-title a#cancel-comment-reply-link:before {
+    content: "\2718";
 }
 
 section#comments div#respond form p label {
@@ -263,6 +403,7 @@ section#comments div#respond form p textarea:focus {
     border-color: #00FF00;
 }
 
+section#comments div#respond form p.logged-in-as,
 section#comments div#respond form p.comment-notes,
 section#comments div#respond form p.form-allowed-tags {
     font-size: 0.9em;
@@ -283,7 +424,8 @@ section#comments div#respond form p.form-submit input {
     outline: 0;
 }
 
-section#comments div#respond form p.form-submit input:hover {
+section#comments div#respond form p.form-submit input:hover,
+section#comments div#respond form p.form-submit input:focus {
     background-color: #222;
 }
 

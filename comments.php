@@ -108,8 +108,13 @@ $com_form_args = array(
 <section id="comments">
     <?php if ( have_comments() ): ?>
         <h2><?php echo $n_com_title; ?></h2>
-        <ol class="commentlist">
-            <?php wp_list_comments(); ?>
+        <ol class="comment-list">
+            <?php wp_list_comments(array(
+                    'style' => 'ol',
+                    'short_ping' => true,
+                    'avatar_size' => 64
+                  ));
+            ?>
         </ol>
         <?php if (get_option('page_comments') && get_comment_pages_count() > 1): ?>
         <nav id="comment-nav-below">

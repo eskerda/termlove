@@ -155,6 +155,46 @@ header#main nav ul li:hover a, header#main nav ul li.current-menu-item a{
     color: #00FF00;
 }
 
+header#main div#poweredby {
+    font-size: 0.6em;
+    font-weight: 900;
+    color: #444;
+    text-align: center;
+}
+
+header#main div#poweredby span {
+
+}
+
+header#main div#poweredby ul {
+    list-style-type: none;
+    padding: 0px; margin: 0px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+header#main div#poweredby ul li {
+    padding: 0px; margin: 0px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+header#main div#poweredby ul li:before {
+    content: "+";
+}
+header#main div#poweredby ul li:first-child:before {
+    content: " ";
+}
+
+header#main div#poweredby ul li a {
+    color: inherit;
+}
+
+header#main div#poweredby ul li a:hover {
+    text-decoration: none;
+    text-shadow: 0px 0px 10px #0F0;
+    color: #0F0;
+}
 
 /** Article Styling **/
 
@@ -522,6 +562,11 @@ header#main div.description img {
     display: none;
 }
 
+header#main div#poweredby {
+    display: none;
+}
+
+
 article .content{
     margin: 0 auto;
     width: 95%;
@@ -622,6 +667,13 @@ article .content{
         display: inline-block;
         border-radius: 50%;
         border: solid 4px #222;
+    }
+
+    header#main div#poweredby {
+        display: block;
+        position: absolute;
+        bottom: 24px;
+        right: 6px;
     }
 }
 

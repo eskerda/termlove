@@ -20,6 +20,17 @@
             );
         ?>
         <?php wp_nav_menu( $args ); ?>
+        <div id="poweredby">
+            powered by
+            <ul>
+                <li>
+                    <a href="http://wordpress.org">WP</a>
+                </li>
+                <li>
+                    <a href="http://github.com/eskerda/termlove">termlove</a>
+                </li>
+            </ul>
+        </div>
     </header>
 </div>
 

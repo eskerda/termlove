@@ -264,6 +264,10 @@ article div.content h6 {
     font-weight: 400;
 }
 
+article div.content img {
+    max-width: 100%;
+}
+
 /** Blog pagination **/
 
 nav#pagination {

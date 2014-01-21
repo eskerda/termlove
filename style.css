@@ -125,6 +125,10 @@ div.wp-caption p.wp-caption-text {
     font-weight: 400;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: -1px;
+}
+
 /** Main menu styling **/
 
 header#main {
@@ -320,7 +324,6 @@ section#comments h2 {
     display: block;
     font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: -1px;
 }
 
 section#comments ol.comment-list,
@@ -457,7 +460,6 @@ section#comments ol.comment-list div#respond {
 section#comments div#respond h3#reply-title {
     font-weight: 400;
     font-size: 16px;
-    letter-spacing: -1px;
     text-transform: uppercase;
 }
 

@@ -50,4 +50,3 @@ add_action('after_setup_theme', 'termlove_setup');
 add_action('wp_enqueue_scripts', 'termlove_scripts');
 
 ?>
-
